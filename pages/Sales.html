@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sale</title>
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1 class="encabezado">Welcome to Pat´s Salmon Cookies!</h1>
+    <nav>
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="root"></section>
+
+    <section>
+      <form action="" method="get" id="newStore">
+        <fieldset>
+          <legend>Add New Store and Table</legend>
+          <div>
+            <div>
+              <label for="locationName">Location Name</label>
+              <input id="locationName" type="text" placeholder="Nombre" name="locationName" />
+            </div>
+            <div>
+              <label for="minClientPerHour">Mínimo de ClientPerHour</label>
+              <input id="minClientPerHour" type="text" placeholder="Minimo" name="minClientPerHour" />
+            </div>
+            <div>
+              <label for="maxClientPerHour">Máximo de ClientPerHour</label>
+              <input id="maxClientPerHour" type="text" placeholder="Maximo" name="maxClientPerHour" />
+            </div>
+            <div>
+              <label for="agvCookiePerSale">Promedio por Hora</label>
+              <input id="agvCookiePerSale" type="text" placeholder="Promedio" name="agvCookiePerSale" />
+            </div>
+          </div>
+        </fieldset>
+        <button type="submit">Enviar datos</button>
+      </form>
+    </section>
+
+    <section>
+      <table>
+        <thead>
+          <tr id="header-row-container">
+            <th>Sede</th></br>
+          </tr>
+        </thead>
+        <tbody id="table-body"></tbody>
+      </table>
+    </section>
+
+  </main>
+
+  <script src="../js/app.js"></script>
+
+  <footer>
+    <p>&copy; 2023 Pat's Salmon cookies</p>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+body {
+  border-left-width: 1px;
+  border-right-width: 1px;
+  margin: 20px;
+}
+
+h1 {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  color: aliceblue;
+  background-color: hwb(0 0% 100%);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-weight: bold;
+}
+
+nav {
+  font-size: 10px;
+  background-color: hsl(16, 95%, 60%);
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+nav > ul {
+  font-size: 13px;
+  display: flex;
+  justify-content: baseline;
+}
+
+.espacio {
+  margin-right: 40px;
+}
+
+.imagen {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+section > h2 {
+  font-weight: bold;
+}
+
+.location {
+  margin: 15px;
+}
