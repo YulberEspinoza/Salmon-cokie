@@ -1,7 +1,7 @@
 "use strict";
 
 const tbody = document.getElementById("table-body");
-const formNewStore = document.getElementById("newStore");
+const form = document.getElementById("newStore");
 
 function Location(
   locationName,
@@ -174,3 +174,33 @@ function run(params) {
     renderIndex(stores[i]);
   }
 }
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const locationName = document.getElementById("locationName").value;
+  const minClientPerHour = parseInt(
+    document.getElementById("minClientPerHour").value
+  );
+  const maxClientPerHour = parseInt(
+    document.getElementById("maxClientPerHour").value
+  );
+  const agvCookiePerSale = parseFloat(
+    document.getElementById("agvCookiePerSale").value
+  );
+
+  const newLocation = new Location(
+    locationName,
+    "", // address
+    "", // contactoInfo
+    "", // workingHours
+    minClientPerHour,
+    maxClientPerHour,
+    agvCookiePerSale,
+    [] // cookieEachHour
+  );
+
+  newLocation.render();
+
+  // Limpiar el formulario
+  form.reset();
+});
